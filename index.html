@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TechWiz — cutting-edge technology solutions.">
+  <meta name="theme-color" content="#f7f3f7">
+  <title>TECHWIZ — Engineered for the Future</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0f'/%3E%3Ctext x='32' y='46' text-anchor='middle' font-size='36' font-family='Arial' font-weight='bold' fill='%2300f0ff'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=light-theme-1">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"}}
+  </script>
+</head>
+<body class="is-loading">
+
+  <div class="page-loader" id="page-loader" role="status" aria-live="polite" aria-label="Loading experience">
+    <div class="page-loader-inner">
+      <span class="loader-wordmark">Tech Studio</span>
+      <span class="loader-track" aria-hidden="true"><i></i></span>
+      <span class="loader-status">Loading experience</span>
+    </div>
+  </div>
+
+  <!-- Fixed 3D canvas -->
+  <div class="scene" aria-hidden="true">
+    <canvas id="webgl"></canvas>
+    <div class="scene-glow"></div>
+  </div>
+
+  <div class="model-fallback" id="model-fallback" role="status" aria-live="polite" hidden>
+    <span class="model-fallback-orb" aria-hidden="true"></span>
+    <span class="model-fallback-text">3D visual is temporarily unavailable.</span>
+  </div>
+
+  <main id="top">
+
+    <!-- ═══════════════════════════════════
+         ORIGINAL SECTION 1 — HERO
+    ════════════════════════════════════ -->
+    <section class="panel hero" id="hero" data-scene="0">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <p class="hero-season">Version 3.0 / Release 2026</p>
+      <div class="corner-label"><span>01</span> Next generation</div>
+
+      <h1 aria-label="Built for what's next.">
+        <span class="hero-title-left">Built</span>
+        <span class="hero-title-right"><em>for what's</em><strong>Next.</strong></span>
+      </h1>
+
+      <p class="hero-note">Precision-engineered software and hardware solutions. No shortcuts, no compromises — just pure performance.</p>
+      <a class="section-scroll" href="#story" aria-label="Scroll to Our approach">↓</a>
+    </section>
+
+    <!-- ═══════════════════════════════════
+         ORIGINAL SECTION 2 — PHILOSOPHY
+    ════════════════════════════════════ -->
+    <section class="panel philosophy" id="story" data-scene="1">
+      <div class="section-index"><span>02</span><span>Our approach</span></div>
+      <div class="headline-wrap" id="philosophy">
+        <p class="kicker">Technology without compromise.</p>
+        <h2>Radically<br><em>precise.</em></h2>
+        <p class="statement">Clean code. Sharp design. Zero bloat. We build technology that works exactly as intended — because precision matters.</p>
+      </div>
+      <div class="facts" aria-label="Product principles">
+        <article><b>01</b><span>Zero<br>latency</span></article>
+        <article><b>02</b><span>Future<br>proof</span></article>
+        <article><b>03</b><span>Open<br>source</span></article>
+      </div>
+      <span class="ring ring-one"></span>
+      <span class="ring ring-two"></span>
+      <a class="section-scroll" href="#layers" aria-label="Scroll to Built in layers">↓</a>
+    </section>
+
+
+    <section class="panel cabbage-section" id="layers" data-scene="2">
+      <div class="section-index"><span>03</span><span>Built in layers</span></div>
+      <div class="cabbage-copy">
+        <p class="kicker">A clearer way forward.</p>
+        <h2>Every layer<br><em>has a purpose.</em></h2>
+        <p class="statement">Thoughtful technology makes complex things simple. We build with care, so every layer works together.</p>
+        <div class="cabbage-points"><span>01 / Thoughtful systems</span><span>02 / Built to work together</span></div>
+      </div>
+      <div class="cabbage-orbit" aria-hidden="true"></div>
+      <a class="section-scroll" href="#evolve" aria-label="Scroll to Designed to evolve">↓</a>
+    </section>
+
+    <section class="panel cauliflower-section" id="evolve" data-scene="3">
+      <div class="section-index"><span>04</span><span>Designed to evolve</span></div>
+      <div class="cauliflower-copy">
+        <p class="kicker">The next form.</p>
+        <h2>Built to<br><em>keep growing.</em></h2>
+        <p class="statement">Great technology never stands still. It adapts, improves, and becomes exactly what the next challenge needs.</p>
+        <div class="cauliflower-points"><span>01 / Adaptive by design</span><span>02 / Ready for what follows</span></div>
+      </div>
+      <div class="cauliflower-orbit" aria-hidden="true"></div>
+      <a class="section-scroll" href="#forward" aria-label="Scroll to Always moving forward">↓</a>
+    </section>
+
+    <section class="panel final-section" id="forward" data-scene="4">
+      <div class="section-index"><span>05</span><span>Always moving forward</span></div>
+      <div class="final-copy">
+        <p class="kicker">Forward, without limits.</p>
+        <h2>Ready for<br><em>the next move.</em></h2>
+        <p class="statement">Built to keep moving, improving, and delivering—wherever the next idea takes us.</p>
+        <div class="final-points"><span>01 / Always advancing</span><span>02 / Made for tomorrow</span></div>
+      </div>
+      <div class="final-orbit" aria-hidden="true"></div>
+      <a class="section-scroll section-scroll-up" href="#top" aria-label="Back to top">↑</a>
+    </section>
+  </main>
+
+  <noscript><p class="noscript">JavaScript is required for the 3D experience.</p></noscript>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script>
+    window.__techwizAnyModelReady = false;
+    window.__techwizLoadFallback = window.setTimeout(() => {
+      if (!document.body.classList.contains('is-loading')) return;
+      document.body.classList.remove('is-loading');
+      document.body.classList.add('is-ready');
+      if (window.__techwizAnyModelReady) return;
+      const fallback = document.querySelector('#model-fallback');
+      if (fallback) {
+        fallback.hidden = false;
+        fallback.classList.add('is-full');
+        fallback.querySelector('.model-fallback-text').textContent = '3D visual is temporarily unavailable.';
+      }
+    }, 12000);
+  </script>
+  <script type="module" src="app.js?v=shutter-reveal-5"></script>
+</body>
+</html>
